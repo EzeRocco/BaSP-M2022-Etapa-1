@@ -12,6 +12,7 @@
         <h1>Trackgenix</h1>
         <h2>We’re Trackgenix SA</h2>
     </header>
+
     <!--aside / sidebar-->
     <aside>
         <ul>
@@ -38,6 +39,7 @@
         <p>address</p>
         <p>1234 Somewhere Road #8254 Nashville, TN 00000-0000</p>
     </aside>
+
     <!--Section / introduction-->
     <section>
         <!--article-->
@@ -53,8 +55,10 @@
             <img src="images/imagen-de-recursos-humanos.png" alt="Human Resources">
         </article>
     </section>
+
     <!--Article / Features--> 
     <article>
+
         <!--First section of features-->
         <h2>Features</h2>
 
@@ -110,6 +114,48 @@
             Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
             Sed nulla amet lorem feugiat tempus aliquam.
         </p>
-    </article> 
+    </article>
+
+    <!--section / information-->
+    <section>
+
+        <h2>Information</h2>
+
+        <form action="/action_page.php">
+            <!--NAME & LAST NAME-->
+            <div>
+                <p>NAME & LAST NAME</p>
+                <input type="text" name="NameAndLastName">
+            </div>
+            <!--EMAIL-->
+            <div>
+                <p>E-MAIL</p>
+                <input type="Text" name="Email">
+            </div>
+
+            <!--contact checkbox-->
+            <div>
+                <p>CONTACT</p>
+
+                <input type="checkbox" name="HumanResources">
+                <label>Human Resources</label>
+                <input type="checkbox" name="Sistems">
+                <label>Sistems</label>
+                <input type="checkbox" name="Commercialization">
+                <label>Commercialization</label>
+            </div>
+
+            <!--Message-->
+            <div>
+                <p>MESSAGE</p>
+                <textarea name="message"></textarea>
+            </div>
+
+            <!--Submit botton-->
+            <input type="submit" value="submit">
+        </form>
+    </section> 
+
+    
 </body>
 </html>
