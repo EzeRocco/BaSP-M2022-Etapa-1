@@ -1,81 +1,48 @@
 
-
 body{
     background-color: #ffffff;
     color: #373867;
     font-family:'Roboto', sans-serif;
-    font-weight: 400 ;
+    font-weight: 400;
 }
 
 .container {
-    display: grid;
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
+    background:#f8f8f8;
 }
-/*
-header{
-    background-color: #AACE9B;
+
+.header{
+    /*grid-area: header; */
+    background: #AACE9B;
+    color:#373867;
     text-align: right;
     font-weight: 700;
 }
-header h1{
+.header h1{
     color: #373867;
     font-size: 50px;
 }
 
-header h2 {
+.header h2{
     color: #69A362;
-    font-size: medium;
-
+    font-size: 17px;
 }
 
-aside {
-    position: relative;
-    left: 20px;
-    width: 50%;
-    background-color: #373867;
-    color: #FFFFFF;
-
-
-   float: left;
+.sidebar {
+    /*grid-area: sidebar; */
+    position: static;
+    display: block;
+    top: 122px;
     width: 253px;
-    padding: 20px;
-    box-sizing: border-box;
-   
-}
-*/
-
-/* article */
-/*
-article {
-    position: relative;
-    top: -193px;
-    right: -263px;
-    display: inline-block;
-    width: 84%;
-    background-color: #FFFFFF;
-}
-article h3 {
-    font-size: 50px;
-    font-weight: 700;
+    height: 6000px;
+    background-color: #373867;
+    color: #ffffff;
+    border-left: 49px solid #AACE9B;
 }
 
-article h4 {
-    font-size: 27px;
-    font-weight: 700;
-}
-
-
-
-
-section{
-    background-color: #FFFFFF;
+.welcome {
+    /* grid-area: welcome; */
 }
 
 .features {
-    display: inline-block;
-    width: 50%;
+    /* grid-area: features; */
 }
-
-*/
