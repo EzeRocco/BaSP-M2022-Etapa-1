@@ -1,15 +1,21 @@
 
 
 body{
-    background-color: #AACE9B;
+    background-color: #ffffff;
     color: #373867;
     font-family:'Roboto', sans-serif;
     font-weight: 400 ;
 }
 
-/* header */
-
+.container {
+    display: grid;
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+/*
 header{
+    background-color: #AACE9B;
     text-align: right;
     font-weight: 700;
 }
@@ -25,17 +31,29 @@ header h2 {
 }
 
 aside {
+    position: relative;
+    left: 20px;
+    width: 50%;
     background-color: #373867;
     color: #FFFFFF;
-    float: left;
+
+
+   float: left;
     width: 253px;
     padding: 20px;
     box-sizing: border-box;
+   
 }
-
+*/
 
 /* article */
+/*
 article {
+    position: relative;
+    top: -193px;
+    right: -263px;
+    display: inline-block;
+    width: 84%;
     background-color: #FFFFFF;
 }
 article h3 {
@@ -50,6 +68,14 @@ article h4 {
 
 
 
+
 section{
     background-color: #FFFFFF;
 }
+
+.features {
+    display: inline-block;
+    width: 50%;
+}
+
+*/
