@@ -36,11 +36,14 @@ body{
     height: 6000px;
     background-color: #373867;
     color: #ffffff;
-    border-left: 49px solid #AACE9B;
+    border-left: 29px solid #AACE9B;
+    padding: 8px;
 }
 
 .welcome {
-    /* grid-area: welcome; */
+    position: absolute;
+    top: 104px;
+    left: 318px;
 }
 
 .features {
