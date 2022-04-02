@@ -1,33 +1,34 @@
 
-body{
+body {
+    position: relative;
     background-color: #ffffff;
     color: #373867;
     font-family:'Roboto', sans-serif;
     font-weight: 400;
 }
 
-.container {
+#container {
     background:#f8f8f8;
 }
 
-.header{
+#header{
     /*grid-area: header; */
     background: #AACE9B;
     color:#373867;
     text-align: right;
     font-weight: 700;
 }
-.header h1{
+#header h1{
     color: #373867;
     font-size: 50px;
 }
 
-.header h2{
+#header h2{
     color: #69A362;
     font-size: 17px;
 }
 
-.sidebar {
+#sidebar {
     /*grid-area: sidebar; */
     position: static;
     display: block;
@@ -40,12 +41,79 @@ body{
     padding: 8px;
 }
 
-.welcome {
+#welcome {
     position: absolute;
     top: 104px;
     left: 318px;
 }
 
-.features {
-    /* grid-area: features; */
+
+#features {
+    position: absolute;
+    top: 608px;
+    left: 318px;
+}
+
+#second-features{
+    position: absolute;
+    left: 318px;
+    top: 2064px;
+
+}
+
+#welcome h3 {
+    color: #373867;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+#welcome h4 {
+    margin-top: 10px;
+    color: #373867 ;
+    font-size: 36px;
+    font-weight: 700;
+}
+#welcome p {
+    position: absolute;
+    width: 431px;
+    height: 334px;
+    left: 43px;
+    top: 212px;
+    text-align: center;
+    font-size: 22px;
+}
+
+#welcome img {
+    position: absolute;
+    left: 608px; 
+}
+
+#features h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: #373867 ;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#features h3 {
+    color: #373867;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+#features div {
+    display: inline-block;
+    width: 49%;
+}
+
+#features img {
+    opacity: 0.5;
+}
+#features .hourse{
+    position: absolute;
+    width: 210px;
+    height: 198.28px;
+    left: 0px;
+    top: 145px;
 }
