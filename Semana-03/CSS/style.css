@@ -12,7 +12,6 @@ body {
 }
 
 #header{
-    /*grid-area: header; */
     background: #AACE9B;
     color:#373867;
     text-align: right;
@@ -29,7 +28,6 @@ body {
 }
 
 #sidebar {
-    /*grid-area: sidebar; */
     position: static;
     display: block;
     top: 122px;
@@ -52,6 +50,7 @@ body {
     position: absolute;
     top: 608px;
     left: 318px;
+    margin-top: 30px;
 }
 
 #second-features{
@@ -88,6 +87,11 @@ body {
     left: 608px; 
 }
 
+#features div {
+    display: inline-block;
+    width: 49%;
+}
+
 #features h2 {
     margin-top: 50px;
     margin-bottom: 10px;
@@ -102,18 +106,91 @@ body {
     font-weight: 700;
 }
 
-#features div {
-    display: inline-block;
-    width: 49%;
+#features p {
+    width: 291px;
+    height: 0px;
+    text-align: center;
+
 }
 
 #features img {
     opacity: 0.5;
 }
-#features .hourse{
+#features .img-hourse{
     position: absolute;
     width: 210px;
     height: 198.28px;
     left: 0px;
     top: 145px;
+}
+
+#features .img-resource {
+    position: absolute;
+    width: 260px;
+    height: 150px;
+    left: 637px;
+    top: 145px;
+}
+#features .img-report {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    left: 0px;
+    top: 507px;
+}
+
+#features .img-roles {
+    position: absolute;
+    width: 260px;
+    height: 150px;
+    left: 637px;
+    top: 507px;
+}
+
+#hours h3 {
+    position: absolute;
+    left: 227px;
+    top: 136px;
+}
+
+#hours p {
+    position: absolute;
+    left: 214px;
+    top: 200px;
+}
+
+#resource-management h3 {
+    position: relative;
+    left: 700px;
+    top: 40px;
+}
+
+#resource-management p {
+    position: absolute;
+    left: 910px;
+    top: 205px;
+}
+
+#reports h3 {
+    position: absolute;
+    left: 227px;
+    top: 500px;
+}
+
+#reports p {
+    position: absolute;
+    left: 227px;
+    top: 576px;
+}
+
+#multiple-roles h3 {
+    position: relative;
+    left: 700px;
+    top: 354px;
+}
+
+#multiple-roles p {
+    position: absolute;
+    left: 910px;
+    top: 576px;
 }
