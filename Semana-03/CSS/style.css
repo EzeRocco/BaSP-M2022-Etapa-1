@@ -51,7 +51,7 @@ body {
     position: absolute;
     top: 608px;
     left: 318px;
-    margin-top: 30px;
+    margin-top: 120px;
 }
 
 #second-features{
@@ -65,6 +65,29 @@ body {
     position: absolute;
     top: 2381px;
     left: 318px;
+}
+
+#history {
+    position: absolute;
+    top: 3226px;
+    left: 518px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 19px;
+}
+
+#option {
+    position: absolute;
+    top: 4600px;
+    left: 518px;
+}
+
+#footer {
+    position: absolute;
+    top: 6000px;
+    left: 518px;
+    background:#AACE9B;
+    text-align: center;
 }
 
 #welcome h3 {
@@ -103,6 +126,8 @@ body {
 
 #sidebar li {
     margin-top: 25px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     background:#AACE9B;
     border-radius: 10px ;
 }
@@ -115,7 +140,7 @@ body {
 }
 
 #sidebar .paragraph {
-    margin-bottom: 75px;
+    margin-bottom: 175px;
 }
 
 #features div {
@@ -304,5 +329,34 @@ body {
     color: #373867;
     font-weight: 700;
     border-radius: 5px;
+}
 
+#history h2 {
+    margin-bottom: 75px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#history .first-part {
+    margin-bottom: 75px ;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+#history p {
+    display: block;
+    width: 1098px;
+    margin-bottom: 30px;
+}
+
+#option div{
+    display: inline-block;
+    width: 450px;
+}
+
+#option h3 {
+    margin-bottom: 30px;
+    color:#AACE9B;
+    font-size: 36px;
+    font-weight: 700;
 }
