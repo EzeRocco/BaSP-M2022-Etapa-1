@@ -37,6 +37,7 @@ body {
     color: #ffffff;
     border-left: 29px solid #AACE9B;
     padding: 8px;
+    text-align: center;
 }
 
 #welcome {
@@ -55,20 +56,24 @@ body {
 
 #second-features{
     position: absolute;
-    left: 318px;
     top: 1560px;
+    left: 425px;
 
 }
 
+#information {
+    position: absolute;
+    top: 2381px;
+    left: 318px;
+}
+
 #welcome h3 {
-    color: #373867;
     font-size: 72px;
     font-weight: 700;
 }
 
 #welcome h4 {
     margin-top: 10px;
-    color: #373867 ;
     font-size: 36px;
     font-weight: 700;
 }
@@ -87,6 +92,32 @@ body {
     left: 608px; 
 }
 
+#sidebar ul {
+    position: absolute;
+    width: 162px;
+    height: 42px;
+    left: 85px;
+    top: 120px;
+
+}
+
+#sidebar li {
+    margin-top: 25px;
+    background:#AACE9B;
+    border-radius: 10px ;
+}
+
+#sidebar h4 {
+    margin-top: 315px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#sidebar .paragraph {
+    margin-bottom: 75px;
+}
+
 #features div {
     display: inline-block;
     width: 49%;
@@ -95,13 +126,11 @@ body {
 #features h2 {
     margin-top: 50px;
     margin-bottom: 10px;
-    color: #373867 ;
     font-size: 36px;
     font-weight: 700;
 }
 
 #features h3 {
-    color: #373867;
     font-size: 25px;
     font-weight: 700;
 }
@@ -215,4 +244,65 @@ body {
     padding: 50px;
     text-align: center;
     font-size: 22px ;
+}
+
+#information h2 {
+    margin-bottom: 30px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+#info-form {
+    padding: 20px;
+}
+
+#info-form .form-group {
+    padding-bottom: 15px;
+}
+
+#info-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+#info-form input[type= "text"] {
+    padding: 10px;
+    width: 505%;
+    background-color: #CBCBCB ;
+    border-radius: 20px;
+}
+
+#info-form p {
+    font-weight: 700;
+}
+
+/*
+#info-form input[type= "checkbox"] {
+    display: inline-block;
+    width: 10px;
+    background-color: #CBCBCB;
+}
+
+*/
+
+
+#info-form textarea{
+    padding: 10px;
+    width: 505%;
+    height: 222px;
+    background-color: #CBCBCB ;
+    border-radius: 20px;
+}
+
+#info-form input[type= "submit"] {
+    position: absolute;
+    left: 500px;
+    margin-top: 10px;
+    padding: 10px 25px;
+    background-color:#69A362;
+    color: #373867;
+    font-weight: 700;
+    border-radius: 5px;
+
 }
