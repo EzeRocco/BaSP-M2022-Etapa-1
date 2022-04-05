@@ -25,5 +25,23 @@ In this repository you will find:
 
 To run the program you must double click on the index file, where you will open the trackgenix page in your browser
 
+
+## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 3ND WEEK PROJECT
+
+The problem of week 03 consists of including the styles corresponding to the HTML structure of week 02 to ensure that when viewing the page, it looks identical to the landing of the screenflow of the first week.
+
+## Content
+A new folder was added to the repository called week-3 with all the files corresponding to this week:
+- An HTML index file with the structure of the layout, but modified with new features.
+- A folder called "images" that contains all of the images used in the page.
+- CSS folder with the files: styles.css and reset.css.
+
+
+## Executing
+
+To run the program, you need to double click on the index file located in the "Semana-03" folder, where it will open the trackgenix page in your browser
+
+
+
 ## Contact
 If you want to know more about this project, you can get in contact via e-mail: eserocco97@gmail.com
