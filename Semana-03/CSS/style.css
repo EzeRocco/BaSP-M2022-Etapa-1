@@ -27,67 +27,10 @@ body {
     font-size: 17px;
 }
 
-#sidebar {
-    position: static;
-    display: block;
-    top: 122px;
-    width: 253px;
-    height: 6000px;
-    background-color: #373867;
-    color: #ffffff;
-    border-left: 29px solid #AACE9B;
-    padding: 8px;
-    text-align: center;
-}
-
 #welcome {
     position: absolute;
     top: 104px;
     left: 318px;
-}
-
-
-#features {
-    position: absolute;
-    top: 608px;
-    left: 318px;
-    margin-top: 120px;
-}
-
-#second-features{
-    position: absolute;
-    top: 1560px;
-    left: 425px;
-
-}
-
-#information {
-    position: absolute;
-    top: 2381px;
-    left: 318px;
-}
-
-#history {
-    position: absolute;
-    top: 3226px;
-    left: 518px;
-    margin-top: 100px;
-    text-align: center;
-    font-size: 19px;
-}
-
-#option {
-    position: absolute;
-    top: 4600px;
-    left: 518px;
-}
-
-#footer {
-    position: absolute;
-    top: 6000px;
-    left: 518px;
-    background:#AACE9B;
-    text-align: center;
 }
 
 #welcome h3 {
@@ -115,6 +58,19 @@ body {
     left: 608px; 
 }
 
+#sidebar {
+    position: static;
+    display: block;
+    top: 122px;
+    width: 253px;
+    height: 6000px;
+    background-color: #373867;
+    color: #ffffff;
+    border-left: 29px solid #AACE9B;
+    padding: 8px;
+    text-align: center;
+}
+
 #sidebar ul {
     position: absolute;
     width: 162px;
@@ -132,6 +88,12 @@ body {
     border-radius: 10px ;
 }
 
+#sidebar a {
+    text-decoration: none;
+    color:#373867;
+    font-size: 20px;
+}
+
 #sidebar h4 {
     margin-top: 315px;
     margin-bottom: 15px;
@@ -141,6 +103,13 @@ body {
 
 #sidebar .paragraph {
     margin-bottom: 175px;
+}
+
+#features {
+    position: absolute;
+    top: 608px;
+    left: 318px;
+    margin-top: 120px;
 }
 
 #features div {
@@ -249,6 +218,13 @@ body {
     top: 576px;
 }
 
+#second-features{
+    position: absolute;
+    top: 1560px;
+    left: 425px;
+
+}
+
 #second-features div {
     display: inline-block;
     width: 35%;
@@ -269,6 +245,12 @@ body {
     padding: 50px;
     text-align: center;
     font-size: 22px ;
+}
+
+#information {
+    position: absolute;
+    top: 2381px;
+    left: 318px;
 }
 
 #information h2 {
@@ -302,10 +284,13 @@ body {
     font-weight: 700;
 }
 
+
 /*
 #info-form input[type= "checkbox"] {
-    display: inline-block;
-    width: 10px;
+    display: inline;
+    width: 20%;
+    padding: 0 5%;
+    text-align: justify; 
     background-color: #CBCBCB;
 }
 
@@ -331,6 +316,15 @@ body {
     border-radius: 5px;
 }
 
+#history {
+    position: absolute;
+    top: 3226px;
+    left: 518px;
+    margin-top: 100px;
+    text-align: center;
+    font-size: 19px;
+}
+
 #history h2 {
     margin-bottom: 75px;
     font-size: 50px;
@@ -349,9 +343,15 @@ body {
     margin-bottom: 30px;
 }
 
+#option {
+    position: absolute;
+    top: 4600px;
+    left: 518px;
+}
+
 #option div{
     display: inline-block;
-    width: 450px;
+    width: 455px;
 }
 
 #option h3 {
@@ -359,4 +359,31 @@ body {
     color:#AACE9B;
     font-size: 36px;
     font-weight: 700;
+}
+
+#option li {
+    font-weight: 700;
+    list-style-type: square;
+}
+
+#option a {
+    text-decoration: none;
+    color: #373867;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#footer {
+    position: absolute;
+    top: 5933px;
+    left: 298px;
+    width: 84%;
+    height: 150px;
+    text-align: center;
+    font-weight: 700;
+    background:#AACE9B;
+}
+
+#footer .p-margin {
+    margin-top: 60px;
 }
