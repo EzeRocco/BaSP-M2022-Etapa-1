@@ -7,10 +7,71 @@ body {
     font-weight: 400;
 }
 
+hr {
+    background-color:#AACE9B;
+}
+
 #container {
     background:#f8f8f8;
 }
 
+#hr-p {
+    position: absolute;
+    width: 224px;
+    left: 62px;
+    top: 111px;
+}
+
+#hr-s {
+    position: absolute;
+    width: 224px;
+    left: 62px;
+    top: 324px;
+}
+#hr-t {
+    position: absolute;
+    width: 1133px;
+    height: 0px;
+    left: 513px;
+    top: 692px;
+    border: 5px solid #EBFAE3;
+}
+
+#hr-c {
+    position: absolute;
+    width: 1133px;
+    height: 0px;
+    left: 513px;
+    top: 1500px;
+    border: 5px solid #EBFAE3;
+}
+
+#hr-q {
+    position: absolute;
+    width: 1133px;
+    height: 0px;
+    left: 513px;
+    top: 2260px;
+    border: 5px solid #EBFAE3;
+}
+
+#hr-s {
+    position: absolute;
+    width: 1133px;
+    height: 0px;
+    left: 513px;
+    top: 3180px;
+    border: 5px solid #EBFAE3;
+}
+
+#hr-se {
+    position: absolute;
+    width: 1133px;
+    height: 0px;
+    left: 513px;
+    top: 4240px;
+    border: 5px solid #EBFAE3;
+}
 #header{
     background: #AACE9B;
     color:#373867;
@@ -283,19 +344,6 @@ body {
 #info-form p {
     font-weight: 700;
 }
-
-
-/*
-#info-form input[type= "checkbox"] {
-    display: inline;
-    width: 20%;
-    padding: 0 5%;
-    text-align: justify; 
-    background-color: #CBCBCB;
-}
-
-*/
-
 
 #info-form textarea{
     padding: 10px;
