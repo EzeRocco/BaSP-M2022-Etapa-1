@@ -1,0 +1,167 @@
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    height: 125px;
+    width: 210;
+}
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#welcome h3, #welcome h4 {
+    font-weight: 700;
+}
+
+#welcome h3 {
+    font-size: 35px;
+}
+
+#welcome p {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#welcome h3, #welcome h4, #welcome p{
+    border: 2px solid blue;
+}
+
+#features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#features h3 {
+    text-align: center;
+    font-weight: 700;
+}
+
+#features .box { 
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    border: 2px solid red;
+}
+
+.box p {
+    text-align: center;
+}
+
+.box img {
+    opacity: 0.5;
+}
+
+#second-features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#second-features h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+#second-features p {
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+#second-features div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    border: 4px solid #AACE9B;
+    text-align: center;
+}
+
+#information {
+    font-size: 15px;
+    border: 2px solid red;
+}
+
+
+#info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#info-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border: 2px solid violet;
+}
+
+#info-form input[type= "text"], #info-form textarea {
+    background-color: #CBCBCB;
+    border-radius: 20px;
+}
+
+#history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#history #first-part{
+    font-weight: 700;
+}
+
+
+#history p{
+    margin-top: 20px;
+    margin-left: 15px;
+    margin-left: 15px;
+}
+
+#option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+#option div {
+    margin-bottom: 15px;
+    border: 2px solid blue;
+}
+
+#option h3 {
+    margin-bottom: 10px;
+    color:#AACE9B;
+    font-size: 30px;
+}
+
+#option li {
+    list-style-type: square;
+}
+
+#option a {
+    text-decoration: none;
+    color: #373867;
+    font-size: 15px;
+    font-weight: 700;
+}
+
