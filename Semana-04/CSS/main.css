@@ -21,6 +21,7 @@ img {
 }
 
 #welcome h3 {
+    margin-top: 10px;
     font-size: 35px;
 }
 
@@ -55,6 +56,8 @@ img {
 
 .box p {
     text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
 }
 
 .box img {
@@ -79,13 +82,16 @@ img {
     text-align: center;
     margin-left: 15px;
     margin-right: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    font-size: 80%;
 }
 
 #second-features div {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 230px;
+    height: 180px;
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 10px;
@@ -94,6 +100,9 @@ img {
 }
 
 #information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 15px;
     border: 2px solid red;
 }
@@ -116,6 +125,7 @@ img {
 #info-form input[type= "text"], #info-form textarea {
     background-color: #CBCBCB;
     border-radius: 20px;
+    width: 406px;
 }
 
 #history {

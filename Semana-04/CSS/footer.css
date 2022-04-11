@@ -1,5 +1,9 @@
 #footer {
+    background:#AACE9B;
     text-align: center;
     font-weight: 700;
-    background:#AACE9B;
+}
+
+#footer p {
+    font-size: 70%;
 }
