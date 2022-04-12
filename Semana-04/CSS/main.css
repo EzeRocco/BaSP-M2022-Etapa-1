@@ -30,9 +30,6 @@ main {
     height: 125px;
 }
 
-#welcome h3, #welcome h4, #welcome p{
-    border: 2px solid blue;
-}
 
 #features {
     display: flex;
@@ -52,7 +49,6 @@ main {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 10px;
-    border: 2px solid red;
 }
 
 .box-conteiner {
@@ -110,7 +106,6 @@ main {
 #information {
     display: block;
     font-size: 15px;
-    border: 2px solid red;
 }
 
 
@@ -120,22 +115,34 @@ main {
     margin-left: 15px;
     margin-right: 15px;
     margin-bottom: 10px;
-    border: 2px solid violet;
 }
 
-.form-group .form-contact {
-    display: flex;
-    justify-content: space-between;
-
+#info-form .form-contact{
+    flex-direction: row;
+    justify-content: space-around;
 }
+
 
 #info-form input[type= "text"], #info-form textarea {
     background-color: #CBCBCB;
     border-radius: 20px;
 }
 
+#info-form p{
+    margin-left: 10px;
+}
+
 #info-form textarea {
     height: 70px;
+}
+
+#info-form input[type= "submit"] {
+    margin-top: 5px;
+    margin-left: 25px;
+    background-color:#69A362;
+    color: #373867;
+    font-weight: 700;
+    border-radius: 5px;
 }
 
 #history {
@@ -154,6 +161,7 @@ main {
     margin-top: 20px;
     margin-left: 15px;
     margin-right: 15px;
+    font-size: 65%;
     text-align: center;
 }
 
@@ -192,6 +200,10 @@ main {
     #features {
         align-items:flex-start;
     }
+    
+    #history p{
+        font-size: 18px;
+    }
 
     #option {
         display: flex;
@@ -224,12 +236,10 @@ main {
         flex-direction: row-reverse;
         margin-top: 10px;
     }
-
-    
+  
     #welcome img {
         margin-right: 140px;
         height: 322px;
-        border: 2px solid blue;
     }
 
     #welcome p {
@@ -252,7 +262,6 @@ main {
         flex-direction: row-reverse;
     }
 
-
     #second-features .column {
         display: flex;
     }
@@ -268,6 +277,10 @@ main {
     #second-features p {
         font-size: 18px;
         padding: 35px;
+    }
+
+    #history p{
+        font-size: 20px;
     }
     
     #option {
