@@ -5,8 +5,7 @@
     width: 25%;
     background-color: #373867;
     color: #ffffff; 
-    font-size: 60%;
-    text-align: center; 
+    text-align: center;
 }
 
 #sidebar img {
@@ -14,9 +13,44 @@
     height: 15px ;
 }
 
+#sidebar li {
+    margin-top: 25px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 9px;
+    padding-right: 9px;
+    background:#AACE9B;
+    border-radius: 10px ;
+    font-size: 70%;
+}
+#sidebar a {
+    text-decoration: none;
+    color:#373867;
+}
+
+#sidebar h4 {
+    margin-top: 90px;
+    font-weight: 700;
+    font-size: 60%;
+}
+
+#sidebar #paragraph  {
+    margin-bottom: 40px;
+    font-size: 50%;
+}
+
+#sidebar p {
+    font-size: 50%;
+}
 
 @media only screen and (max-width: 480px) {
     #sidebar {
         display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #sidebar {
+        width: 35%;
     }
 }

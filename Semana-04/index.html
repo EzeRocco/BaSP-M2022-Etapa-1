@@ -37,7 +37,7 @@
                 </li>
             </ul>
             <h4>Contact</h4>
-            <p class="paragraph">
+            <p id="paragraph">
                 Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper
                 dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aliquam.
             </p>
@@ -98,33 +98,37 @@
             </section>
             <hr id="hr-c">
             <section id="second-features">
-                <div>
-                    <h3>PRODUCTIVITY BOOSTER</h3>
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
-                        Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
+                <div class="column">
+                    <div class="second-box">
+                        <h3>PRODUCTIVITY BOOSTER</h3>
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
+                            Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+                    <div class="second-box">
+                        <h3>WORK TRACEABILITY</h3>
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
+                            Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
                 </div>
-                <div>
-                    <h3>WORK TRACEABILITY</h3>
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
-                        Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
-                </div>
-                <div>
-                    <h3>LEADERSHIP AND TEAM MANAGEMENT</h3>
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
-                        Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
-                </div>
-                <div>
-                    <h3>DECISION MAKING</h3>
-                    <p>
-                        Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
-                        Sed nulla amet lorem feugiat tempus aliquam.
-                    </p>
+                <div class="column">
+                    <div class="second-box">
+                        <h3>LEADERSHIP AND TEAM MANAGEMENT</h3>
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
+                            Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
+                    <div class="second-box">
+                        <h3>DECISION MAKING</h3>
+                        <p>
+                            Aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis ante interdum. 
+                            Sed nulla amet lorem feugiat tempus aliquam.
+                        </p>
+                    </div>
                 </div>
             </section>
             <hr id="hr-q">
@@ -139,14 +143,18 @@
                         <label>E-MAIL</label>
                         <input type="text" name="Email">
                     </div>
-                    <div class="form-group">
-                        <p>CONTACT</p>
-                        <input type="checkbox" name="HumanResources">
-                        <label class="check-name">Human Resources</label>
-                        <input type="checkbox" name="Sistems">
-                        <label class="check-name">Sistems</label>
-                        <input type="checkbox" name="Commercialization">
-                        <label class="check-name">Commercialization</label>
+                    <p>CONTACT</p>
+                    <div class="form-group form-contact">
+                        <div>
+                            <input type="checkbox" name="HumanResources">
+                            <label class="check-name">Human Resources</label>
+                        </div>
+                            <input type="checkbox" name="Sistems">
+                            <label class="check-name">Sistems</label>
+                        <div>
+                            <input type="checkbox" name="Commercialization">
+                            <label class="check-name">Commercialization</label>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label>MESSAGE</label>

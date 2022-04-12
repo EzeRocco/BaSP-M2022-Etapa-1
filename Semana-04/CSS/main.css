@@ -86,7 +86,7 @@ img {
     font-size: 80%;
 }
 
-#second-features div {
+#second-features .second-box {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -100,32 +100,30 @@ img {
 }
 
 #information {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: block;
     font-size: 15px;
     border: 2px solid red;
-}
-
-
-#info-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 
 #info-form .form-group {
     display: flex;
     flex-direction: column;
+    margin-left: 15px;
+    margin-right: 15px;
     margin-bottom: 10px;
     border: 2px solid violet;
+}
+
+.form-group .form-contact {
+    display: flex;
+    justify-content: space-between;
+
 }
 
 #info-form input[type= "text"], #info-form textarea {
     background-color: #CBCBCB;
     border-radius: 20px;
-    width: 406px;
 }
 
 #history {
@@ -149,13 +147,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    margin-top: 75px;
+    margin-bottom: 55px;
 }
 
 #option div {
     margin-bottom: 15px;
-    border: 2px solid blue;
 }
 
 #option h3 {
@@ -175,3 +172,43 @@ img {
     font-weight: 700;
 }
 
+
+@media only screen and (min-width: 768px) {
+    #option {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 125px;
+        margin-bottom: 125px;
+        margin-left: 60px;
+        margin-right: 60px;
+}
+
+
+@media only screen and (min-width: 1024px) {
+    #second-features .column {
+        display: flex;
+    }
+
+    #second-features .second-box {
+        width: 360px;
+        height: 215px;
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    
+    #second-features p {
+        font-size: 18px;
+        padding: 35px;
+    }
+    
+    #option {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 105px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+}
