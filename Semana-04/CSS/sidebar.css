@@ -49,15 +49,20 @@
     }
 }
 
-@media only screen and (min-width: 480px) {
-    #sidebar {
-        width: auto;
-    }
-}
 
 
 @media only screen and (min-width: 1024px) {
     #sidebar {
         width: 35%;
+
     }
+
+    #sidebar li {
+        width: 100px;
+    }
+
+    #sidebar p, #sidebar #paragraph {
+        font-size: 13px;
+    }
+
 }

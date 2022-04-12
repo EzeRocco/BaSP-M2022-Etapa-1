@@ -122,15 +122,19 @@ main {
     justify-content: space-around;
 }
 
+#info-form p{
+    margin-left: 10px;
+}
+
+#info-form label, #info-form p {
+    font-weight: 700;
+}
 
 #info-form input[type= "text"], #info-form textarea {
     background-color: #CBCBCB;
     border-radius: 20px;
 }
 
-#info-form p{
-    margin-left: 10px;
-}
 
 #info-form textarea {
     height: 70px;
@@ -200,7 +204,7 @@ main {
     #features {
         align-items:flex-start;
     }
-    
+
     #history p{
         font-size: 18px;
     }
@@ -255,7 +259,7 @@ main {
     }
 
     #features p {
-        font-size: 22px ;
+        font-size: 20px ;
     }
 
     #features .rev {
@@ -272,6 +276,10 @@ main {
         margin-top: 40px;
         margin-left: 40px;
         margin-right: 40px;
+    }
+
+    .box-conteiner img {
+        height: 128px;
     }
     
     #second-features p {
