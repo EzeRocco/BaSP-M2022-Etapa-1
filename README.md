@@ -41,7 +41,16 @@ A new folder was added to the repository called week-3 with all the files corres
 
 To run the program, you need to double click on the index file located in the "Semana-03" folder, where it will open the trackgenix page in your browser
 
+## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 4ND WEEK PROJECT
 
+The objective of week 04 is to replicate the landing page of the screenflow of week 01 using Flexbox as the main tool for the creation of a Responsive Design following the concept of Mobile First. The main menu should be placed in the left sidebar with links when viewing from a desktop pc, but when looking at the web from a cell phone the vertical bar should disappear and only the “hamburger” icon should be shown ☰.
+
+## Content
+A new folder was added to the repository called week-3 with all the files corresponding to this week:
+- An HTML index file with the structure of the layout, but modified with new features.
+- A folder called "images" that contains all of the images used in the page.
+- CSS folder with the files: styles.css and reset.css.
+- In addition, a css file was added for each part of the body sections: header.css, main.css, sidebar.css and footer.css
 
 ## Contact
 If you want to know more about this project, you can get in contact via e-mail: eserocco97@gmail.com
