@@ -40,7 +40,7 @@ var upper = palabra2.toUpperCase();
 //elegimos la primera letra en mayuscula
 var letra = upper.substring(0,1);
 //volvemos a poner toda la palabra en minuscula
-var lower = palabra2.toLocaleLowerCase();
+var lower = upper.toLocaleLowerCase();
 //nos quedamos con la palabra menos su primera letra
 var resto = lower.substring(1);
 //sumamos la primera letra en mayuscula con el resto de la palabra en minuscula

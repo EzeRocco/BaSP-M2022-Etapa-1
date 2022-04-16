@@ -26,17 +26,17 @@ console.log('-Exercise 4.b:');
 var age = Math.floor(Math.random() * 100);
 console.log('edad: ' + age);
 
-if(age < 2){
+if(age < 2) {
     console.log('Bebe');
-} else if (age < 12 && age > 2){
+} else if (age < 12 && age > 2) {
     console.log('Niño');
-} else if (age < 19 && age > 13){
+} else if (age < 19 && age > 13) {
     console.log('Adolecente');
-} else if (age < 30 && age > 20){
+} else if (age < 30 && age > 20) {
     console.log('Joven');
-} else if (age < 60 && age > 31){
+} else if (age < 60 && age > 31) {
     console.log('Adulto');
-} else if (age < 75 && age > 61){
+} else if (age < 75 && age > 61) {
     console.log('Adulto mayor');
 } else {
     console.log('Anciano');
