@@ -23,6 +23,7 @@
     border-radius: 10px ;
     font-size: 70%;
 }
+
 #sidebar a {
     text-decoration: none;
     color:#373867;
@@ -46,15 +47,26 @@
 @media only screen and (max-width: 480px) {
     #sidebar {
         display: none;
+        margin-top: 60px;
     }
 }
 
+@media only screen and (min-width: 480px) {
+    #sidebar {
+        margin-top: 55px;
+    }
+}
 
+@media only screen and (min-width: 768px) {
+    #sidebar {
+        margin-top: 60px;
+    }
+}
 
 @media only screen and (min-width: 1024px) {
     #sidebar {
         width: 35%;
-
+        margin-top: 75px;
     }
 
     #sidebar li {
@@ -64,5 +76,4 @@
     #sidebar p, #sidebar #paragraph {
         font-size: 13px;
     }
-
 }

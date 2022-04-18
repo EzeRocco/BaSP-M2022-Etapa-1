@@ -1,17 +1,16 @@
 header {
+    position: fixed;
+    width: 100%;
     background: #AACE9B;
     color:#373867;
     font-family:'Roboto', sans-serif;
     font-weight: 700;
 }
 
-
 header h1 {
     color: #373867;
     font-size: 25px;
 }
-
-
 
 header h2 {
     color: #69A362;
@@ -20,14 +19,13 @@ header h2 {
     margin-bottom: 0;
 }
 
-
-header .container{
+header .container {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
 }
 
-.container img{
+.container img {
     align-self: flex-start;
     height: 20px;
     width: 20px;
@@ -38,35 +36,43 @@ header .container{
     header {
         height: 55px;
     }
+
     header h1 {
       font-size: 40px;
     }
+
     header p {
         font-size: 15px;
     }
+
     .container img {
         display: none;
     }
-  }
+}
+
 @media only screen and (min-width: 768px) {
     header {
         height: 65px;
     }
+
     header h1 {
         font-size: 50px;
-      }
+    }
     header p {
         font-size: 25px;
     }
 }
-@media only screen and (min-width: 1024px) {
+
+@media only screen and (min-width: 1024px){
     header {
         height: 75px;
     }
+
     header h1 {
         font-size: 60px;
-      }
-    header p {
+    }
+
+    header p { 
         font-size: 45px;
     }
 }

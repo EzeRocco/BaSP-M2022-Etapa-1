@@ -1,8 +1,8 @@
 main {
     display: flex;
     flex-direction: column;
+    margin-top: 70px;
 }
-
 
 #welcome {
     display: flex;
@@ -29,7 +29,6 @@ main {
 #welcome img {
     height: 125px;
 }
-
 
 #features {
     display: flex;
@@ -108,7 +107,6 @@ main {
     font-size: 15px;
 }
 
-
 #info-form .form-group {
     display: flex;
     flex-direction: column;
@@ -117,12 +115,12 @@ main {
     margin-bottom: 10px;
 }
 
-#info-form .form-contact{
+#info-form .form-contact {
     flex-direction: row;
     justify-content: space-around;
 }
 
-#info-form p{
+#info-form p {
     margin-left: 10px;
 }
 
@@ -134,7 +132,6 @@ main {
     background-color: #CBCBCB;
     border-radius: 20px;
 }
-
 
 #info-form textarea {
     height: 70px;
@@ -155,12 +152,11 @@ main {
     align-items: center;
 }
 
-#history #first-part{
+#history #first-part {
     font-weight: 700;
 }
 
-
-#history p{
+#history p {
     text-align: center;
     margin-top: 20px;
     margin-left: 15px;
@@ -198,14 +194,13 @@ main {
     font-weight: 700;
 }
 
-
 @media only screen and (min-width: 768px) {
 
     #features {
         align-items:flex-start;
     }
 
-    #history p{
+    #history p {
         font-size: 18px;
     }
 
@@ -217,6 +212,7 @@ main {
         margin-bottom: 125px;
         margin-left: 60px;
         margin-right: 60px;
+    }
 }
 
 
@@ -250,7 +246,7 @@ main {
         font-size: 23px;
     }
 
-    #features .separator{
+    #features .separator {
         display: flex;
     }
 
@@ -287,7 +283,7 @@ main {
         padding: 35px;
     }
 
-    #history p{
+    #history p {
         font-size: 20px;
     }
     
