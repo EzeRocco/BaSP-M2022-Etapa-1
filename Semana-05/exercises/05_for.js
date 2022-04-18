@@ -4,10 +4,10 @@ console.log('-- EXERCISE 5: FOR');
 //alerta utilizando cada una de las palabras.
 console.log('-Exercise 5.a:');
 
-var paises = ['argentina','brasi','italia','alemania','inglaterra'];
+var paises = ['argentina','brasil','italia','alemania','inglaterra'];
 
 for (var a = 0; a < 5; a++) {
-    console.log(paises[a]);
+    window.alert(paises[a]);
 }
 
 //Al array anterior convertir la primera letra de cada palabra en mayúscula y mostrar una alerta por cada palabra modificada.
@@ -17,7 +17,7 @@ for (var b = 0; b < 5; b++) {
     var pais = paises[b];
     var pais_may = (pais.toUpperCase()).substring(0,1) + (pais.toLowerCase()).substring(1);
     paises[b] = pais_may;
-    console.log(paises[b]);
+    window.alert(paises[b]);
 }
 
 //Crear una variable llamada “sentence” que tenga un string vacío, luego al array del punto a) recorrerlo con un bucle for 
@@ -30,7 +30,7 @@ for (var c = 0; c < 5; c++) {
     sentence += paises[c] + ' ';
 }
 
-console.log(sentence);
+window.alert(sentence);
 
 //Crear una array vacío y con un bucle for de 10 repeticiones. Llenar el array con el número de la repetición, es decir 
 //que al final de la ejecución del bucle for debería haber 10 elementos dentro del array, desde el número 0 hasta al número 9.
