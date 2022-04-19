@@ -52,7 +52,7 @@ A new folder was added to the repository called week-4 with all the files corres
 - CSS folder with the files: styles.css and reset.css.
 - In addition, a css file was added for each part of the body sections: header.css, main.css, sidebar.css and footer.css
 
-## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 4ND WEEK PROJECT
+## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 5ND WEEK PROJECT
 
 The problem of the fifth week will be divided into two activities:
 
