@@ -46,11 +46,24 @@ To run the program, you need to double click on the index file located in the "S
 The objective of week 04 is to replicate the landing page of the screenflow of week 01 using Flexbox as the main tool for the creation of a Responsive Design following the concept of Mobile First. The main menu should be placed in the left sidebar with links when viewing from a desktop pc, but when looking at the web from a cell phone the vertical bar should disappear and only the “hamburger” icon should be shown ☰.
 
 ## Content
-A new folder was added to the repository called week-3 with all the files corresponding to this week:
+A new folder was added to the repository called week-4 with all the files corresponding to this week:
 - An HTML index file with the structure of the layout, but modified with new features.
 - A folder called "images" that contains all of the images used in the page.
 - CSS folder with the files: styles.css and reset.css.
 - In addition, a css file was added for each part of the body sections: header.css, main.css, sidebar.css and footer.css
+
+## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 4ND WEEK PROJECT
+
+The problem of the fifth week will be divided into two activities:
+
+1- improve what was delivered in weekly problem 4 by implementing what was corrected by the tutors
+2-they will have to do JavaScript exercises.
+
+## Content
+A new folder was added to the repository called week-5 with all the files corresponding to this week:
+- An html index where you can see the javascript exercises in the console.
+- A folder called exercises where there will be several js files that correspond to each block of activities.
+- CSS file fixes will still be in the week 4 folder.
 
 ## Contact
 If you want to know more about this project, you can get in contact via e-mail: eserocco97@gmail.com
