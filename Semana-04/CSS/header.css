@@ -34,7 +34,7 @@ header .container {
 
 @media only screen and (min-width: 481px) {
     header {
-        height: 55px;
+        height: 76px;
     }
 
     header h1 {
@@ -45,14 +45,11 @@ header .container {
         font-size: 15px;
     }
 
-    .container img {
-        display: none;
-    }
 }
 
 @media only screen and (min-width: 768px) {
     header {
-        height: 65px;
+        height: 85px;
     }
 
     header h1 {
@@ -74,5 +71,8 @@ header .container {
 
     header p { 
         font-size: 45px;
+    }
+    .container img {
+        display: none;
     }
 }

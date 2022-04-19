@@ -59,7 +59,19 @@
 
 @media only screen and (min-width: 768px) {
     #sidebar {
-        margin-top: 60px;
+        margin-top: 77px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #sidebar {
+        display: none;
+    }
+} 
+
+@media only screen and (max-width: 1024px) {
+    #sidebar {
+        display: none;
     }
 }
 
