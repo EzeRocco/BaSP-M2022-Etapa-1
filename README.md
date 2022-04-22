@@ -65,5 +65,18 @@ A new folder was added to the repository called week-5 with all the files corres
 - A folder called exercises where there will be several js files that correspond to each block of activities.
 - CSS file fixes will still be in the week 4 folder.
 
+## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 6ND WEEK PROJECT
+For problem 06, work must continue on what was developed in problem 04.
+you will have to work with the html and css structures of the login and sign up screens made in figma for Week 01.
+In addition, all the Javascript logic necessary for the operation of both the login and sign uo forms must be included.
+
+## Content
+A new folder was added to the repository called week-5 with all the files corresponding to this week:
+- Two new folders: 
+The views folder where the index file of our landing is, the file of the sign up page and the file of the login page.
+The javascript folder where we implement our code for login as well as our sign up
+-the CSS folder with all our style sheets
+-And a folder called "images" where all the images of our three pages 
+
 ## Contact
 If you want to know more about this project, you can get in contact via e-mail: eserocco97@gmail.com
