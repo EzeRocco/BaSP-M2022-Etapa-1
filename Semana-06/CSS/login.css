@@ -68,7 +68,6 @@ main {
     justify-content: center;
     width: 48%;
     height: 62%;
-    border: 2px solid wheat;
 }
 
 #login-form .login-elements {
@@ -80,6 +79,15 @@ main {
 #login-form a {
     align-self: flex-end;
     margin-top: 70px;
+}
+
+.login-elements input[type= "text"] {
+    width: 229px;
+    height: 26px;
+    background: #FBFBFB;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 #login-form input[type= "submit"] {

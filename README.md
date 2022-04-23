@@ -70,7 +70,7 @@ For problem 06, work must continue on what was developed in problem 04.
 you will have to work with the html and css structures of the login and sign up screens made in figma for Week 01.
 In addition, all the Javascript logic necessary for the operation of both the login and sign uo forms must be included.
 
-## Content
+## ContentS
 A new folder was added to the repository called week-5 with all the files corresponding to this week:
 - Two new folders: 
 The views folder where the index file of our landing is, the file of the sign up page and the file of the login page.
