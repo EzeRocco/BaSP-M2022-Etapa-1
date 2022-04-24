@@ -81,6 +81,15 @@ main {
     margin-top: 70px;
 }
 
+.login-elements.reg {
+    margin-top: 20px;
+}
+
+#login-form .error {
+    font-size: 15px;
+    color: red;
+}
+
 .login-elements input[type= "text"] {
     width: 229px;
     height: 26px;

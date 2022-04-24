@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../CSS/reset.css"> 
     <link rel="stylesheet" href="./../CSS/login.css">
-    <!-- <link rel="stylesheet" href="./../CSS/footer.css"> -->
+    <script src="./../javascript/login.js"></script>
 </head>
 <body>
     <header >
@@ -25,18 +25,20 @@
             <form id="login-form">
                 <div class="login-elements reg">
                     <img src="./../images/email2.png" alt="email">
-                    <input type="text" name="Email">
+                    <input id="email" type="text" name="Email">
                 </div>
+                <label id="error-email">*error email</label>
                 <div class="login-elements reg">
                     <img src="./../images/password.png" alt="password">
-                    <input type="text" name="Password">
+                    <input id="password" type="text" name="Password">
                 </div>
+                <label id="error-password">*error password</label>
                 <div class="login-elements">
                     <input type="checkbox" name="RememberMe">
                     <label>Remember me</label>
                 </div>
                 <a href="#">Forgot password?</a>
-                <input type="submit" value="Continue">
+                <input id="bottom" type="submit" value="Continue">
             </form>
         </section>
     </main>
