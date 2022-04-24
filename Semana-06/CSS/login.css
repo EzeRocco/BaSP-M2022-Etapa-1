@@ -90,7 +90,7 @@ main {
     color: red;
 }
 
-.login-elements input[type= "text"] {
+.login-elements input[type= "text"], .login-elements input[type= "password"]  {
     width: 229px;
     height: 26px;
     background: #FBFBFB;
