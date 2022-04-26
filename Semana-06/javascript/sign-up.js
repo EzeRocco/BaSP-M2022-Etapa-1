@@ -21,6 +21,7 @@ window.onload = function() {
     var error_password = document.getElementById("password-error");
     var repeat_password = document.getElementById("rpassword");
     var error_rpassword = document.getElementById("repeat-password-error");
+    var bottom = document.getElementById("bottom");
     var abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var validation_name;
     var validation_last_name;
@@ -153,6 +154,57 @@ window.onload = function() {
             phone.style.borderColor= "red";
         }
     })
+    error_address.style.display = "none";
+
+    address.addEventListener('focus', function(){
+        error_address.style.display = "none";
+    })
+
+    address.addEventListener('blur',function(){
+        var space_address = address.value.replaceAll(' ', '');
+        var flag_num = 0;
+        var flag_let = 0;
+        for(var d = 0; d < space_address.length; d++) {
+            if(isNaN(space_address[d]) == false) {
+                flag_num = 1;
+            }
+        }
+        for(var e = 0; e < space_address.length; e++) {
+            if(isNaN(space_address[d]) == true) {
+                flag_let = 1;
+            }
+        }
+        if(address.value.length > 5 && flag_num == 1 && flag_let == 1 && address.value.indexOf(' ') > 0 &&
+        address.value.indexOf(' ') < address.value.length - 1 && address.value.length > address.value.lastIndexOf(' ')) {
+            error_address.style.display = "none";
+            address.style.borderColor = "green";
+            validation_address = 1;
+        } else {
+            error_address.style.display = "flex";
+            error_address.style.color = "red";
+            address.style.borderColor= "red";
+        }
+
+    })
+
+    error_location.style.display = "none";
+
+    location.addEventListener('focus', function(){
+        error_location.style.display = "none";
+    })
+
+    location.addEventListener('blur',function(){
+        if(location.value.length >= 3) {
+            error_location.style.display = "none";
+            location.style.borderColor = "green";
+            validation_location = 1;
+        } else {
+            error_location.style.display = "flex";
+            error_location.style.color = "red";
+            location.style.borderColor= "red";
+        }
+    })
+
 
     error_postal.style.display = "none";
 
@@ -240,6 +292,16 @@ window.onload = function() {
             error_rpassword.style.display = "none";
             repeat_password.style.borderColor = "green";
             validation_repeat_password = 1;
+        }
+    })
+
+    bottom.addEventListener('click', function(){
+        if((validation_name === 1) && (validation_last_name === 1) && (validation_dni === 1) && (validation_birth === 1)
+        && (validation_phone === 1) && (validation_address === 1) && (validation_location === 1) && (validation_postal === 1)
+        && (validation_email === 1) && (validation_password === 1) && (validation_repeat_password === 1)){
+            alert("You sign up in successfully");
+        } else {
+            window.alert("Email or password was not correct");
         }
     })
 
