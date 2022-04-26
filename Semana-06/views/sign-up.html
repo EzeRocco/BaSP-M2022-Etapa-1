@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./../CSS/reset.css"> 
     <link rel="stylesheet" href="./../CSS/sign-up.css">
+    <script src="./../javascript/sign-up.js"></script>
+
     <!-- <link rel="stylesheet" href="./../CSS/footer.css"> -->
 </head>
 <body>
@@ -25,48 +27,59 @@
             <form id="signup-form">
                 <div>
                     <label>First name</label>
-                    <input type="text" name="first_name">
+                    <input id="name" type="text" name="first_name">
                 </div>
+                <label id="name-error" class="error">*NAME ERROR: has to be greater than three letters</label>
                 <div>
                     <label>Last name</label>
-                    <input type="text" name="last_name">
+                    <input id="lname" type="text" name="last_name">
                 </div>
+                <label id="lastname-error" class="error">*LAST NAME ERROR: has to be greater than three letters</label>
                 <div>
                     <label>DNI</label>
-                    <input type="number" name="DNI">
+                    <input id="dni" type="text" name="DNI">
                 </div>
+                <label id="dni-error" class="error">*DNI ERROR: single number and with a quantity of seven</label>
                 <div>
                     <label>Date of birth</label>
-                    <input type="text" name="birth_date">
+                    <input id="birth" type="date" name="birth_date">
                 </div>
+                <label id="birth-error" class="error">*DATE BIRTH ERROR</label>
                 <div>
                     <label>Phone</label>
-                    <input type="number" name="phone">
+                    <input id="phone" type="number" name="phone">
                 </div>
+                <label id="phone-error" class="error">*NUMBER ERROR: Single number and must have ten numbers</label>
                 <div>
                     <label>Address</label>
-                    <input type="text" name="address">
+                    <input id="address" type="text" name="address">
                 </div>
+                <label id="address-error" class="error">*ADDRESS ERROR: At least five characters with letters, numbers and a space in between.</label>
                 <div>
                     <label>Location</label>
-                    <input type="text" name="location">
+                    <input id="location" type="text" name="location">
                 </div>
+                <label id="location-error" class="error">*LOCATION ERROR: Alphanumeric text and must have more than three letters.</label>
                 <div>
                     <label>Postal Code</label>
-                    <input type="number" name="postal">
+                    <input id="postal" type="number" name="postal">
                 </div>
+                <label id="postal-error" class="error">*POSTAL NUMBER ERROR: Only number and must have between four and five numbers.</label>
                 <div>
                     <label>Email</label>
-                    <input type="text" name="email">
+                    <input id="email" type="text" name="email">
                 </div>
+                <label id="email-error" class="error">*EMAIL ERROR: Invalid email</label>
                 <div>
                     <label>Password</label>
-                    <input type="text" name="password">
+                    <input id="password" type="text" name="password">
                 </div>
+                <label id="password-error" class="error">*PASSWORD ERROR: At least eight characters, made up of letters and numbers.</label>
                 <div>
                     <label>Repeat Password</label>
-                    <input type="text" name="repeat_password">
+                    <input id="rpassword" type="text" name="repeat_password">
                 </div>
+                <label id="repeat-password-error" class="error">*PASSWORD ERROR: Not match.</label>
                 <input type="submit" value="Continue">
             </form>
         </section>
