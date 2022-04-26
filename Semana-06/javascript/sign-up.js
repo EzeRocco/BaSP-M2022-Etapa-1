@@ -136,7 +136,6 @@ window.onload = function() {
         }
     })
 
-
     error_phone.style.display = "none";
 
     phone.addEventListener('focus', function(){
@@ -299,9 +298,11 @@ window.onload = function() {
         if((validation_name === 1) && (validation_last_name === 1) && (validation_dni === 1) && (validation_birth === 1)
         && (validation_phone === 1) && (validation_address === 1) && (validation_location === 1) && (validation_postal === 1)
         && (validation_email === 1) && (validation_password === 1) && (validation_repeat_password === 1)){
-            alert("You sign up in successfully");
+            alert("You sign up in successfully\n" +" Name: "+ name.value +"\n Last name: "+ last_name.value +"\n DNI: "+ dni.value
+            +"\n Date of birth: "+ birth.value +"\n Phone: "+ phone.value +"\n Address "+ address.value +"\n Location: "+ location.value
+            +"\n Postal code: " + postal.value +"\n Email: "+ email.value +"\n Password: "+ password.value);
         } else {
-            window.alert("Email or password was not correct");
+            alert("Email or password was not correct");
         }
     })
 

@@ -93,7 +93,7 @@ main {
 }
 
 #signup-form input[type= "date"] {
-    width: 230%;
+    width: 185%;
     height: 26px;
     background: #FBFBFB;
     border: 1px solid rgba(0, 0, 0, 0.3);
