@@ -17,18 +17,16 @@ window.onload = function() {
     })
 
     email.addEventListener('blur',function(){
-        var validation = email.value.indexOf("@");
-        var validation2 = email.value.indexOf(".com");  
-        if (validation === -1 || validation2 === -1){
-            error_email.style.display = "flex";
-            error_email.style.color = "red";
-            email.style.borderColor = "red";
+        if(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/.test(email.value)){
+         error_email.style.display = "none";
+         email.style.borderColor = "green";
+         final_validation = 1;
         } else {
-            error_email.style.display = "none";
-            email.style.borderColor = "green";
-            final_validation = 1;
+         error_email.style.display = "flex";
+         error_email.style.color = "red";
+         email.style.borderColor = "red";
         }
-    })
+     })
 
     password.addEventListener('focus', function(){
         error_password.style.display = "none";

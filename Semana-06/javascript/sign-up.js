@@ -20,9 +20,19 @@ window.onload = function() {
     var password = document.getElementById("password");
     var error_password = document.getElementById("password-error");
     var repeat_password = document.getElementById("rpassword");
-    var error_password = document.getElementById("repeat-password-error");
+    var error_rpassword = document.getElementById("repeat-password-error");
     var abc = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "ñ", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
     var validation_name;
+    var validation_last_name;
+    var validation_dni;
+    var validation_birth;
+    var validation_phone;
+    var validation_address;
+    var validation_location;
+    var validation_postal;
+    var validation_email;
+    var validation_password;
+    var validation_repeat_password;
 
     error_name.style.display = "none";
 
@@ -39,21 +49,19 @@ window.onload = function() {
                 letras++;
             }
         }
-        if(name.value.length < 3) {
+        if(letras >= 3) {
+            error_name.style.display = "none";
+            name.style.borderColor = "green";
+            validation_name = 1;
+        } else {
             error_name.style.display = "flex";
             error_name.style.color = "red";
             name.style.borderColor= "red";
-        } else {
-            error_name.style.display = "none";
-            name.style.borderColor = "green";
         }
         if (letras <= 0 ){
             error_name.style.display = "flex";
             error_name.style.color = "red";
             name.style.borderColor= "red";
-        } else {
-            error_name.style.display = "none";
-            name.style.borderColor = "green";
         }
     })
 
@@ -65,29 +73,27 @@ window.onload = function() {
 
     last_name.addEventListener('blur',function(){
         var last_name_value = last_name.value;
-        var letras = 0;
+        var letras2 = 0;
         for(var a = 0; a < last_name.value.length; a++) {
             if(abc.includes(last_name_value[a].toLocaleLowerCase())) {
-                letras++;
+                letras2++;
             }
         }
-        console.log(letras);
-        if(last_name.value.length  > 3) {
+        console.log(letras2);
+        if(letras2 >= 3) {
             error_lastname.style.display = "none";
             last_name.style.borderColor = "green";
+            validation_last_name = 1;
 
         } else {
             error_lastname.style.display = "flex";
             error_lastname.style.color = "red";
             last_name.style.borderColor= "red";
         }
-        if (letras <= 0 ){
+        if (letras2 <= 0 ){
             error_lastname.style.display = "flex";
             error_lastname.style.color = "red";
             last_name.style.borderColor= "red";
-        } else {
-            error_lastname.style.display = "none";
-            last_name.style.borderColor = "green";
         }
     })
 
@@ -101,10 +107,139 @@ window.onload = function() {
         if((dni.value.length >= 7) && (isNaN(dni.value) == false)){
             error_dni.style.display = "none";
             dni.style.borderColor = "green";
+            validation_dni = 1;
         } else {
             error_dni.style.display = "flex";
             error_dni.style.color = "red";
             dni.style.borderColor= "red";
+        }
+    })
+
+    error_birth.style.display = "none";
+
+    birth.addEventListener('focus', function(){
+        error_birth.style.display = "none";
+    })
+
+    birth.addEventListener('blur',function(){
+        var actual_day = new Date();
+        var input_day = new Date(birth.value);
+        if (input_day > actual_day ) {
+            error_birth.style.display = "flex";
+            error_birth.style.color = "red";
+            birth.style.borderColor= "red";
+        } else {
+            error_birth.style.display = "none";
+            birth.style.borderColor = "green";
+            validation_birth = 1;
+        }
+    })
+
+
+    error_phone.style.display = "none";
+
+    phone.addEventListener('focus', function(){
+        error_phone.style.display = "none";
+    })
+
+    phone.addEventListener('blur',function(){
+        if((phone.value.length >= 10) && (isNaN(phone.value) == false)){
+            error_phone.style.display = "none";
+            phone.style.borderColor = "green";
+            validation_phone = 1;
+        } else {
+            error_phone.style.display = "flex";
+            error_phone.style.color = "red";
+            phone.style.borderColor= "red";
+        }
+    })
+
+    error_postal.style.display = "none";
+
+    postal.addEventListener('focus', function(){
+        error_postal.style.display = "none";
+    })
+
+    postal.addEventListener('blur',function(){
+        if((postal.value.length >= 4) && (postal.value.length <= 5) && (isNaN(postal.value) == false)){
+            error_postal.style.display = "none";
+            postal.style.borderColor = "green";
+            validation_postal = 1;
+        } else {
+            error_postal.style.display = "flex";
+            error_postal.style.color = "red";
+            postal.style.borderColor= "red";
+        }
+    })
+
+    error_email.style.display = "none";
+
+    email.addEventListener('focus', function(){
+        error_email.style.display = "none";
+    })
+
+    email.addEventListener('blur',function(){
+       if(/[a-z0-9]+@[a-z]+\.[a-z]{2,3}/.test(email.value)){
+        error_email.style.display = "none";
+        email.style.borderColor = "green";
+        validation_email = 1;
+       } else {
+        error_email.style.display = "flex";
+        error_email.style.color = "red";
+        email.style.borderColor = "red";
+       }
+    })
+
+    error_password.style.display = "none";
+
+    password.addEventListener('focus', function(){
+        error_password.style.display = "none";
+    })
+
+    password.addEventListener('blur',function(){
+        var pass_value = password.value;
+        var letr = 0;
+        var numr = 0;
+        for(var c = 0; c < password.value.length; c++) {
+            if(abc.includes(pass_value[c].toLocaleLowerCase())) {
+                console.log(letr);
+                letr++;
+            } else {
+                Number.isInteger(pass_value[c])
+                numr++;
+            }
+        }
+        if((letr + numr) >= 8) {
+            error_password.style.display = "none";
+            password.style.borderColor = "green";
+            validation_password = 1;
+        } else {
+            error_password.style.display = "flex";
+            error_password.style.color = "red";
+            password.style.borderColor= "red";
+        }
+        if (letr <= 0  || numr <= 0 || password.value.indexOf(" ") > -1){
+            error_password.style.display = "flex";
+            error_password.style.color = "red";
+            password.style.borderColor= "red";
+        }
+    })
+
+    error_rpassword.style.display = "none";
+
+    repeat_password.addEventListener('focus', function(){
+        error_rpassword.style.display = "none";
+    })
+
+    repeat_password.addEventListener('blur',function(){
+        if(password.value !== repeat_password.value || repeat_password.value.length === 0){
+            error_rpassword.style.display = "flex";
+            error_rpassword.style.color = "red";
+            repeat_password.style.borderColor= "red";
+        } else {
+            error_rpassword.style.display = "none";
+            repeat_password.style.borderColor = "green";
+            validation_repeat_password = 1;
         }
     })
 
