@@ -71,12 +71,31 @@ you will have to work with the html and css structures of the login and sign up 
 In addition, all the Javascript logic necessary for the operation of both the login and sign uo forms must be included.
 
 ## ContentS
-A new folder was added to the repository called week-5 with all the files corresponding to this week:
+A new folder was added to the repository called week-6 with all the files corresponding to this week:
 - Two new folders: 
 The views folder where the index file of our landing is, the file of the sign up page and the file of the login page.
 The javascript folder where we implement our code for login as well as our sign up
 -the CSS folder with all our style sheets
 -And a folder called "images" where all the images of our three pages 
+
+## Executing
+To execute the code you must access the following link where you will find our page:
+https://ezerocco.github.io/BaSP-M2022-Etapa-1/Semana-06/views/index.html
+
+## RR COURSE - 'BECOME A SOFTWARE DEVELOPER' 7ND WEEK PROJECT
+For problem 07, we must continue working on what was developed in the previous problem.
+The problem consists of extending the forms of week 06 so that when pressing the confirmation buttons, the data loaded in them is sent to a web server through an HTTP call (request) from JavaScript.
+
+## ContentS
+A new folder was added to the repository called week-7 with all the files corresponding to this week:
+-The views folder where the index file of our landing is, the file of the sign up page and the file of the login page.
+-The javascript folder.
+-the CSS folder with all our style sheets.
+-And a folder called "images" where all the images of our three pages.
+
+## Executing
+To execute the code you must access the following link where you will find our page:
+https://ezerocco.github.io/BaSP-M2022-Etapa-1/Semana-07/views/index.html
 
 ## Contact
 If you want to know more about this project, you can get in contact via e-mail: eserocco97@gmail.com
