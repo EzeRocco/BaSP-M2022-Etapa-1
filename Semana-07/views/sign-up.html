@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./../CSS/reset.css"> 
+    <link rel="stylesheet" href="./../CSS/sign-up.css">
+    <script src="./../javascript/sign-up.js"></script>
+
+    <!-- <link rel="stylesheet" href="./../CSS/footer.css"> -->
+</head>
+<body>
+    <header >
+        <div class="container">
+            <a href="./../views/index.html">
+            <h1>Trackgenix</h1>
+            </a>
+            <h2>We’re Trackgenix SA</h2>
+        </div>
+    </header>
+    <main>
+        <section id="sec-signup">
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <div>
+                    <label>First name</label>
+                    <input id="name" type="text" name="first_name">
+                </div>
+                <label id="name-error" class="error">*NAME ERROR: has to be greater than three letters</label>
+                <div>
+                    <label>Last name</label>
+                    <input id="lname" type="text" name="last_name">
+                </div>
+                <label id="lastname-error" class="error">*LAST NAME ERROR: has to be greater than three letters</label>
+                <div>
+                    <label>DNI</label>
+                    <input id="dni" type="text" name="DNI">
+                </div>
+                <label id="dni-error" class="error">*DNI ERROR: single number and with a quantity of seven</label>
+                <div>
+                    <label>Date of birth</label>
+                    <input id="birth" type="date" name="birth_date">
+                </div>
+                <label id="birth-error" class="error">*DATE BIRTH ERROR</label>
+                <div>
+                    <label>Phone</label>
+                    <input id="phone" type="text" name="phone">
+                </div>
+                <label id="phone-error" class="error">*NUMBER ERROR: Single number and must have ten numbers</label>
+                <div>
+                    <label>Address</label>
+                    <input id="address" type="text" name="address">
+                </div>
+                <label id="address-error" class="error">*ADDRESS ERROR: At least five characters with letters, numbers and a space in between.</label>
+                <div>
+                    <label>Location</label>
+                    <input id="location" type="text" name="location">
+                </div>
+                <label id="location-error" class="error">*LOCATION ERROR: Alphanumeric text and must have more than three letters.</label>
+                <div>
+                    <label>Postal Code</label>
+                    <input id="postal" type="text" name="postal">
+                </div>
+                <label id="postal-error" class="error">*POSTAL NUMBER ERROR: Only number and must have between four and five numbers.</label>
+                <div>
+                    <label>Email</label>
+                    <input id="email" type="text" name="email">
+                </div>
+                <label id="email-error" class="error">*EMAIL ERROR: Invalid email</label>
+                <div>
+                    <label>Password</label>
+                    <input id="password" type="password" name="password">
+                </div>
+                <label id="password-error" class="error">*PASSWORD ERROR: At least eight characters, made up of letters and numbers.</label>
+                <div>
+                    <label>Repeat Password</label>
+                    <input id="rpassword" type="password" name="repeat_password">
+                </div>
+                <label id="repeat-password-error" class="error">*PASSWORD ERROR: Not match.</label>
+                <input id="bottom" type="submit" value="Continue">
+            </form>
+        </section>
+    </main>
+    <footer id="footer">
+        <p id="p-footer">Rosario, Santa Fe - Argentina </p>
+        <p>Copyright © 2022 Trackgenix SA. All rights reserved.</p>
+    </footer> 
+    
+</body>
+</html>
