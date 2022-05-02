@@ -27,6 +27,7 @@ window.onload = function() {
     var validation_last_name;
     var validation_dni;
     var validation_birth;
+    var formattedDate;
     var validation_phone;
     var validation_address;
     var validation_location;
@@ -34,6 +35,9 @@ window.onload = function() {
     var validation_email;
     var validation_password;
     var validation_repeat_password;
+    var url = 'https://basp-m2022-api-rest-server.herokuapp.com/signup';
+    
+    
 
     error_name.style.display = "none";
 
@@ -294,13 +298,42 @@ window.onload = function() {
         }
     })
 
-    bottom.addEventListener('click', function(){
+    bottom.addEventListener('click', function(e){
+        e.preventDefault();
+        var date = new Date(birth.value);
+        var month = (1 + date.getMonth()).toString().padStart(2, '0');
+        var day = date.getDate().toString().padStart(2, '0');
+        formattedDate = month + '/' + day + '/' + date.getFullYear();
         if((validation_name === 1) && (validation_last_name === 1) && (validation_dni === 1) && (validation_birth === 1)
         && (validation_phone === 1) && (validation_address === 1) && (validation_location === 1) && (validation_postal === 1)
         && (validation_email === 1) && (validation_password === 1) && (validation_repeat_password === 1)){
-            alert("You sign up in successfully\n" +" Name: "+ name.value +"\n Last name: "+ last_name.value +"\n DNI: "+ dni.value
-            +"\n Date of birth: "+ birth.value +"\n Phone: "+ phone.value +"\n Address "+ address.value +"\n Location: "+ location.value
-            +"\n Postal code: " + postal.value +"\n Email: "+ email.value +"\n Password: "+ password.value);
+            fetch(url + '?name=' + name.value + '&lastName=' + last_name.value + '&dni=' + dni.value + '&dob=' + formattedDate + '&phone=' + phone.value + '&address=' + address.value + '&city=' + location.value + '&zip=' + postal.value + '&email=' + email.value + '&password=' + password.value)
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(res){
+                if(res.success){
+                    window.alert(` ${res.msg}
+                    ---information---
+                    Name: ${name.value}
+                    Last Name: ${last_name.value}
+                    DNI: ${dni.value}
+                    Phone: ${phone.value}
+                    Addres: ${address.value}
+                    Location: ${location.value}
+                    Postal Code: ${postal.value}
+                    Email: ${email.value}
+                    Password: ${password.value}`);
+                } else {
+                    window.alert(res.msg)
+                }
+            })             
+            .catch(function(err){
+                window.alert(err.errors[0].msg);
+            });
+            // alert("You sign up in successfully\n" +" Name: "+ name.value +"\n Last name: "+ last_name.value +"\n DNI: "+ dni.value
+            // +"\n Date of birth: "+ birth.value +"\n Phone: "+ phone.value +"\n Address "+ address.value +"\n Location: "+ location.value
+            // +"\n Postal code: " + postal.value +"\n Email: "+ email.value +"\n Password: "+ password.value);
         } else {
             alert("Email or password was not correct");
         }
