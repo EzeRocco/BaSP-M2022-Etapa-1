@@ -86,6 +86,11 @@ main {
     margin-top: 70px;
 }
 
+#login-form #second_a{
+    margin-top: 10px;
+}
+
+
 .login-elements.reg {
     margin-top: 20px;
 }
