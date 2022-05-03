@@ -313,13 +313,23 @@ window.onload = function() {
             })
             .then(function(res){
                 if(res.success){
+                    localStorage.setItem("name", name.value);
+                    localStorage.setItem("lastName", last_name.value);
+                    localStorage.setItem("dni", dni.value);
+                    localStorage.setItem("dob", formattedDate);
+                    localStorage.setItem("phone", phone.value);
+                    localStorage.setItem("address", address.value);
+                    localStorage.setItem("city", location.value);
+                    localStorage.setItem("zip", postal.value);
+                    localStorage.setItem("email", email.value);
+                    localStorage.setItem("password", password.value);
                     window.alert(` ${res.msg}
                     ---information---
                     Name: ${name.value}
                     Last Name: ${last_name.value}
                     DNI: ${dni.value}
                     Phone: ${phone.value}
-                    Addres: ${address.value}
+                    Address: ${address.value}
                     Location: ${location.value}
                     Postal Code: ${postal.value}
                     Email: ${email.value}
